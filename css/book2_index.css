@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* wrap */
+#wrap { width: 100%; height: 100vh; position: relative; overflow: hidden; background: url(../images/sub/book2_bg.png) no-repeat center top;  }
+
+/* header */
+#header { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); text-align: center; width: 100%; z-index: 9;  }
+#header h1 img { width: 100px; height: 50px; cursor: pointer; }
+
+#header .menu { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); cursor: pointer; margin-top: 5px; }
+#header .menu img { width: 25px; height: 20px; }
+
+
+/* container */
+#container { position: relative; text-align: center; height: 100vh; width: 100%;  }
+
+#container .box1 { box-sizing: border-box; position: absolute; width: 209px; height: 43px; left: 50%; transform: translateX(-50%); top: 100px; background: #FFFFFF; border: 1.5px solid #000000; box-shadow: 3px 3px 0px #000000; display: flex; align-items: center; justify-content: center; }
+#container .box1 h2 { font-size: 1.8rem; }
+
+#container .content { display: flex; flex-direction: column; position: absolute; left: 50%; transform: translate(-50%, -50%);top: 62%;  }
+#container .content .bookmark { position: absolute; right: 10%; top: 0; }
+#container .content .bookmark img { width: 27px; height: 44px; }
+#container .content .box2 {  box-sizing: border-box;  width: 368px; height: 340px; background: #FFFFFF; border: 1.5px solid #000000;  box-shadow: 1.5px 1.5px 0px #000000; margin-bottom: 10px; padding: 40px 20px;  }
+#container .content .box2 .text1 { text-align: left; }
+#container .content .box2 .text1 dt { font-size: 1.5rem; font-weight: bold; margin-bottom: 30px; }
+#container .content .box2 .text1 dd { font-size: 1.5rem; margin-bottom: 10px; transition: all 0.5s ease-in-out; cursor: pointer; display: flex; justify-content: space-between; }
+#container .content .box2 .text1 dd:hover { font-weight: bold; }
+#container .content .box2 .text1 dd span { font-size: 1.2rem; margin-right: 10px; }
+
+#container .content .box3 { display: flex; flex-direction: column; justify-content: center; box-sizing: border-box;  width: 368px; height: 130px; background: #FFFFFF; border: 1.5px solid #000000;  box-shadow: 1.5px 1.5px 0px #000000; padding: 10px 20px; text-align: left; }
+#container .content .box3 .text2 dt { font-size: 1.2rem; font-weight: bold; }
+#container .content .box3 .text2 dd { font-size: 1.2rem; margin-bottom: 15px; }
+
+#container .content .box3 .text3 dt { font-size: 1.2rem; font-weight: bold; }
+#container .content .box3 .text3 dd { font-size: 1.2rem;  }

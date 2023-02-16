@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* wrap */
+#wrap { width: 100%; height: 100vh; position: relative; overflow: hidden; }
+#wrap .w_inner { padding-top: 20px; }
+
+
+/* header */
+#header { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); text-align: center; width: 100%;  }
+#header h1 img { width: 100px; height: 50px; }
+
+
+/* container */
+#container { position: absolute; left: 50%; bottom: 35px; transform: translateX(-50%); text-align: center;  width: 100%; }
+#container .inner { height: 600px; width: 100%; position: relative; }
+
+/* under */
+#container .book { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 600px; }
+/* #container .top { position: absolute; left: 40%; bottom: 78%; display: flex;  flex-direction: column; align-items: flex-end; }
+#container .top .book1 {  box-sizing: border-box; width: 210.25px; height: 31.16px;background: #FFFFFF; border: 1px solid #000000; box-shadow: 2px 2px 0px #000000; transform: rotate(8.4deg); margin-bottom: 2px; }
+#container .top .book2 { box-sizing: border-box; background: #FFFFFF; border: 1px solid #000000;  box-shadow: 2px 2px 0px #000000; transform: rotate(8.92deg); width: 194.63px;  height: 57.36px; } */
+
+#container .under { z-index: 999; position: fixed; left: 50%; bottom: 0; display: flex; align-items: flex-end; transform: translateX(-50%); }
+#container .under li { transition: all 0.5s; cursor: pointer; }
+#container .under li:hover { transform: translate(0,-10px); }
+#container .under .book2 { box-sizing: border-box; border: 1px solid #000000; box-shadow: 2px 2px 0px #000000; margin-right: 15px;  }
+#container .under .book2 img { width: 90px; height: 480px; }
+#container .under .book1 { box-sizing: border-box; border: 1px solid #000000; box-shadow: 2px 2px 0px #000000;  margin-right: 10px;  }
+#container .under .book1 img { width: 70px; height: 435px; }
+#container .under .book3 { box-sizing: border-box; background: #FFFFFF; border: 1px solid #000000; box-shadow: 2px 2px 0px #000000;  width: 76px; height: 335px; margin-right: 8px; }
+#container .under .book4 {  box-sizing: border-box; background: #FFFFFF; border: 1px solid #000000; box-shadow: 2px 2px 0px #000000;  width: 54px; height: 410px; transform: rotate(-2.47deg); margin-bottom: 1px;  }
+
+#container .bookmark { transition: all 0.5s; cursor: pointer; position: absolute; left: 15%; top: 10%; }
+#container .bookmark img { width: 62px; height: 72px;}
+#container .bookmark:hover { transform: translate(0,-10px); }
+
+/* footer */
+#footer { border-top: 2px solid #000; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 35px; }
+
+/* media query */
+@media (max-width:360px) { 
+    
+}
